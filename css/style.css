@@ -29,60 +29,74 @@ html {
 /* line 15, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: #27ae60; }
+  background: #3498db; }
 
-/* line 24, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
-nav ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0; }
+/* line 23, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+nav {
+  text-align: center;
+  background-color: #e74c3c; }
+  /* line 26, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
 
-/* line 33, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+/* line 35, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
 h1 {
   width: 500px;
-  margin: 100px auto 20px;
-  color: #f0f0f0;
+  margin: 150px auto 20px;
+  color: #ecf0f1;
   text-align: center; }
 
-/* line 40, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+/* line 46, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+.nav__menu li a {
+  padding: 0 2em 0 2em;
+  text-decoration: none;
+  color: #ecf0f1; }
+
+/* line 54, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
 .nav {
   width: 500px;
   margin: 0 auto;
-  background: #1e8449;
-  color: #f0f0f0; }
-  /* line 45, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
-  .nav a {
-    display: block;
-    padding: 0 16px;
-    line-height: inherit;
-    cursor: pointer; }
-  /* line 52, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
-  .nav__menu {
-    line-height: 45px;
-    font-weight: 700;
-    text-transform: uppercase; }
-    /* line 56, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
-    .nav__menu-item {
-      display: inline-block;
-      position: relative; }
-      /* line 60, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
-      .nav__menu-item:hover {
-        background-color: #9b59b6; }
-        /* line 63, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
-        .nav__menu-item:hover .nav__submenu {
-          display: block; }
-  /* line 72, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+  background: #217dbb;
+  color: #ecf0f1 a;
+  color-display: block;
+  color-padding: 0 16px;
+  color-line-height: inherit;
+  color-cursor: pointer;
+  color-text-decoration: none; }
+  /* line 68, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
   .nav__submenu {
     font-weight: 300;
     text-transform: none;
     display: none;
+    opacity: 0;
     position: absolute;
     width: 220px;
-    background-color: #9b59b6; }
+    background-color: #95a5a6; }
     /* line 81, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
     .nav__submenu-item:hover {
       background: rgba(0, 0, 0, 0.1); }
+  /* line 88, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+  .nav__menu {
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 100; }
+    /* line 93, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+    .nav__menu-item {
+      display: inline-block;
+      position: relative; }
+      /* line 97, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+      .nav__menu-item:hover {
+        transition: ease all 300ms;
+        background-color: #c0392b; }
+        /* line 102, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+        .nav__menu-item:hover .nav__submenu {
+          display: block;
+          transition: ease all 500ms;
+          opacity: 1; }
