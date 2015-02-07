@@ -1,0 +1,88 @@
+@-moz-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-o-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1; }
+
+@viewport {
+  width: device-width;
+  scale: 1; }
+
+/* line 7, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+html {
+  box-sizing: border-box; }
+
+/* line 11, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* line 15, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #27ae60; }
+
+/* line 24, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/* line 33, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+h1 {
+  width: 500px;
+  margin: 100px auto 20px;
+  color: #f0f0f0;
+  text-align: center; }
+
+/* line 40, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+.nav {
+  width: 500px;
+  margin: 0 auto;
+  background: #1e8449;
+  color: #f0f0f0; }
+  /* line 45, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+  .nav a {
+    display: block;
+    padding: 0 16px;
+    line-height: inherit;
+    cursor: pointer; }
+  /* line 52, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+  .nav__menu {
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    /* line 56, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+    .nav__menu-item {
+      display: inline-block;
+      position: relative; }
+      /* line 60, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+      .nav__menu-item:hover {
+        background-color: #9b59b6; }
+        /* line 63, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+        .nav__menu-item:hover .nav__submenu {
+          display: block; }
+  /* line 72, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+  .nav__submenu {
+    font-weight: 300;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 220px;
+    background-color: #9b59b6; }
+    /* line 81, /Users/Gregleblanc/Documents/GD Year 3 W/web/exercise-4/scss/components/main */
+    .nav__submenu-item:hover {
+      background: rgba(0, 0, 0, 0.1); }
